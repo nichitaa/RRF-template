@@ -1,0 +1,39 @@
+.pageWrapper {
+	background-color: rgba(255, 255, 255, 0.3);
+	width: 80%;
+	margin: 100px auto;
+	padding: 20px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.cardWrapper {
+	background-color: rgba(136, 136, 136, 0.3);
+	border-radius: 15px;
+	width: 50%;
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px 30px;
+	text-align: center;
+}
+
+.date {
+	font-style: italic;
+	padding-top: 5px;
+}
+
+.feedback {
+	padding-top: 5px;
+}
+
+@media (max-width: 768px) {
+	.pageWrapper {
+		width: 90%;
+		margin: 100px auto;
+		padding: 20px;
+	}
+
+	.cardWrapper {
+		width: 80%;
+	}
+}

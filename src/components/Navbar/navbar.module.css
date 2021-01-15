@@ -1,0 +1,90 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(1, 1, 1, 0.5);
+}
+
+.navbarBrand {
+	padding: 0.5rem 1rem;
+}
+
+.navbarLinks ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navbarLinks ul li {
+	list-style: none;
+}
+
+.navbarLinks ul li .navbarLink {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding: 1rem;
+	display: block;
+}
+
+.navbarLinks li:hover {
+	background-color: rgba(1, 1, 1, 0.1);
+}
+
+.navbarLinks .navbarLink:hover {
+	color: rgb(236, 145, 59);
+}
+
+/* HAMBURGER */
+.toggleButton {
+	position: absolute;
+	top: 1.2rem;
+	right: 1rem;
+	/* do not display by default */
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 31px;
+	height: 21px;
+}
+
+.toggleButton .bar {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+	.toggleButton {
+		display: flex;
+	}
+
+	/* remove navbar links */
+	.navbarLinks {
+		display: none;
+		/* make links full width */
+		width: 100%;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.navbarLinks ul {
+		flex-direction: column;
+		/* center items in ul */
+		width: 100%;
+	}
+
+	.navbarLinks ul li {
+		text-align: center;
+	}
+
+	/* when the navbarLinks will have active class */
+	/* show them */
+	.navbarLinks.active {
+		display: flex;
+	}
+}

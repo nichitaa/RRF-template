@@ -1,0 +1,52 @@
+.formContainer {
+	display: grid;
+	width: 50%;
+	margin: auto;
+	align-items: center;
+	grid-gap: 1rem;
+	text-align: center;
+	background-color: rgba(1, 1, 1, 0.2);
+	padding: 2rem;
+	border-radius: 10px;
+}
+
+.formItem {
+	resize: none; /* for textarea */
+	width: 100%;
+	padding: 0.5rem 1rem;
+	border-radius: 7px;
+}
+
+.formItem:focus {
+	outline: none;
+	box-shadow: 0 0 2pt 1pt rgb(101, 230, 191);
+}
+
+.formSubmitButton {
+	justify-self: center;
+	border: none;
+	padding: 0.8rem 2rem;
+	max-width: 70%;
+	border-radius: 10px;
+	color: white;
+	background-color: black;
+	font-size: 1rem;
+	font-weight: 700;
+	transition: all 0.3s ease 0s;
+}
+
+.formSubmitButton:hover {
+	background-color: darkgray;
+	transition: all 0.3s ease 0s;
+	color: black;
+}
+
+@media only screen and (max-width: 768px) {
+	.formContainer {
+		width: 80%;
+	}
+
+	.formSubmitButton {
+		max-width: 80%;
+	}
+}
